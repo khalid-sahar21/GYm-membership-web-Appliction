@@ -17,6 +17,9 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/secrets.yml
+  client_config: {}
+  server_config: {}
 package_name: My_gym_membership_
 allow_embedding: false
 name: 'My gym membership '
@@ -68,4 +71,8 @@ db_schema:
       admin_ui: {order: 6, width: 200}
       type: datetime
     title: Users
+secrets:
+  new_secret:
+    type: secret
+    value: {I5VPXN5XNF7FVQZ2: ''}
 renamed: true
